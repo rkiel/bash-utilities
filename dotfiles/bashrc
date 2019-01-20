@@ -1,0 +1,4 @@
+alias more='less -RX'
+alias sl='ls'
+alias lsl='ls -l'
+alias lsa='ls -la'
