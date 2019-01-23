@@ -38,21 +38,15 @@ module Setup
 
       File.open(File.join(ENV['HOME'], '.bash_profile'), "a") do |f|
         f.puts
-        f.puts '#############################################################'
         f.puts "# added by ~/GitHub/rkiel/bash-utilities/install/bin/setup"
-        f.puts '#############################################################'
         contents.each { |line| f.puts line }
-        f.puts '#############################################################'
         f.puts
       end
 
       File.open(File.join(ENV['HOME'], '.bashrc'), "a") do |f|
         f.puts
-        f.puts '#############################################################'
         f.puts "# added by ~/GitHub/rkiel/bash-utilities/install/bin/setup"
-        f.puts '#############################################################'
         f.puts 'source ~/GitHub/rkiel/bash-utilities/dotfiles/bashrc'
-        f.puts '#############################################################'
         f.puts
       end
 
